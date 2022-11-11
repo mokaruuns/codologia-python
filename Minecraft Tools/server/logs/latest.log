@@ -1,0 +1,156 @@
+[02:03:20] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[02:03:20] [Server thread/INFO]: Loading properties
+[02:03:20] [Server thread/INFO]: Default game type: SURVIVAL
+[02:03:20] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-6de2fbc-c1aa859 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)
+[02:03:20] [Server thread/INFO]: Debug logging is disabled
+[02:03:20] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:03:20] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:03:20] [Server thread/INFO]: Generating keypair
+[02:03:21] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:03:21] [Server thread/INFO]: Using default channel type
+[02:03:21] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[02:03:22] [Server thread/INFO]: [SetSpawn] Loading SetSpawn v2.1
+[02:03:22] [Server thread/INFO]: [RaspberryJuice] Loading RaspberryJuice v1.7
+[02:03:22] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[02:03:22] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[02:03:22] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[02:03:22] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[02:03:22] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[02:03:22] [Server thread/INFO]: Preparing level "world"
+[02:03:22] [Server thread/INFO]: -------- World Settings For [world] --------
+[02:03:22] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[02:03:22] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[02:03:22] [Server thread/INFO]: Item Merge Radius: 2.5
+[02:03:22] [Server thread/INFO]: Item Despawn Rate: 6000
+[02:03:22] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[02:03:22] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[02:03:22] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[02:03:22] [Server thread/INFO]: Mob Spawn Range: 4
+[02:03:22] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[02:03:22] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[02:03:22] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Cane Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Melon Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Vine Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[02:03:22] [Server thread/INFO]: Structure Info Saving: true
+[02:03:22] [Server thread/INFO]: Random Lighting Updates: false
+[02:03:22] [Server thread/INFO]: Max TNT Explosions: 100
+[02:03:22] [Server thread/INFO]: Experience Merge Radius: 3.0
+[02:03:22] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[02:03:22] [Server thread/INFO]: View Distance: 10
+[02:03:22] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[02:03:23] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[02:03:23] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[02:03:23] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[02:03:23] [Server thread/INFO]: Item Merge Radius: 2.5
+[02:03:23] [Server thread/INFO]: Item Despawn Rate: 6000
+[02:03:23] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[02:03:23] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[02:03:23] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[02:03:23] [Server thread/INFO]: Mob Spawn Range: 4
+[02:03:23] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[02:03:23] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[02:03:23] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Cane Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Melon Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Vine Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Structure Info Saving: true
+[02:03:23] [Server thread/INFO]: Random Lighting Updates: false
+[02:03:23] [Server thread/INFO]: Max TNT Explosions: 100
+[02:03:23] [Server thread/INFO]: Experience Merge Radius: 3.0
+[02:03:23] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[02:03:23] [Server thread/INFO]: View Distance: 10
+[02:03:23] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[02:03:23] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[02:03:23] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[02:03:23] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[02:03:23] [Server thread/INFO]: Item Merge Radius: 2.5
+[02:03:23] [Server thread/INFO]: Item Despawn Rate: 6000
+[02:03:23] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[02:03:23] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[02:03:23] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[02:03:23] [Server thread/INFO]: Mob Spawn Range: 4
+[02:03:23] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[02:03:23] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[02:03:23] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Cane Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Melon Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Vine Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[02:03:23] [Server thread/INFO]: Structure Info Saving: true
+[02:03:23] [Server thread/INFO]: Random Lighting Updates: false
+[02:03:23] [Server thread/INFO]: Max TNT Explosions: 100
+[02:03:23] [Server thread/INFO]: Experience Merge Radius: 3.0
+[02:03:23] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[02:03:23] [Server thread/INFO]: View Distance: 10
+[02:03:23] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617Monument: 10387313 Slime: 987234911
+[02:03:23] [Server thread/INFO]: Preparing start region for level 0 (Seed: 8137330724147304576)
+[02:03:24] [Server thread/INFO]: Preparing spawn area: 4%
+[02:03:25] [Server thread/INFO]: Preparing spawn area: 11%
+[02:03:26] [Server thread/INFO]: Preparing spawn area: 19%
+[02:03:27] [Server thread/INFO]: Preparing spawn area: 26%
+[02:03:28] [Server thread/INFO]: Preparing spawn area: 33%
+[02:03:29] [Server thread/INFO]: Preparing spawn area: 39%
+[02:03:30] [Server thread/INFO]: Preparing spawn area: 44%
+[02:03:32] [Server thread/INFO]: Preparing spawn area: 48%
+[02:03:33] [Server thread/INFO]: Preparing spawn area: 53%
+[02:03:34] [Server thread/INFO]: Preparing spawn area: 59%
+[02:03:35] [Server thread/INFO]: Preparing spawn area: 62%
+[02:03:36] [Server thread/INFO]: Preparing spawn area: 67%
+[02:03:37] [Server thread/INFO]: Preparing spawn area: 72%
+[02:03:38] [Server thread/INFO]: Preparing spawn area: 75%
+[02:03:39] [Server thread/INFO]: Preparing spawn area: 82%
+[02:03:40] [Server thread/INFO]: Preparing spawn area: 86%
+[02:03:41] [Server thread/INFO]: Preparing spawn area: 91%
+[02:03:42] [Server thread/INFO]: Preparing spawn area: 98%
+[02:03:42] [Server thread/INFO]: Preparing start region for level 1 (Seed: 8137330724147304576)
+[02:03:43] [Server thread/INFO]: Preparing spawn area: 6%
+[02:03:44] [Server thread/INFO]: Preparing spawn area: 16%
+[02:03:45] [Server thread/INFO]: Preparing spawn area: 29%
+[02:03:46] [Server thread/INFO]: Preparing spawn area: 44%
+[02:03:47] [Server thread/INFO]: Preparing spawn area: 58%
+[02:03:48] [Server thread/INFO]: Preparing spawn area: 67%
+[02:03:49] [Server thread/INFO]: Preparing spawn area: 85%
+[02:03:50] [Server thread/INFO]: Preparing start region for level 2 (Seed: 8137330724147304576)
+[02:03:51] [Server thread/INFO]: Preparing spawn area: 35%
+[02:03:52] [Server thread/INFO]: Preparing spawn area: 66%
+[02:03:53] [Server thread/INFO]: [SetSpawn] Enabling SetSpawn v2.1
+[02:03:53] [Server thread/INFO]: [RaspberryJuice] Enabling RaspberryJuice v1.7
+[02:03:53] [Server thread/INFO]: [RaspberryJuice] ThreadListener Started
+[02:03:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:03:53] [Server thread/INFO]: Done (31,383s)! For help, type "help" or "?"
+[02:03:53] [Server thread/INFO]: Starting GS4 status listener
+[02:03:53] [Query Listener #1/INFO]: Query running on 0.0.0.0:25565
+[02:12:36] [User Authenticator #1/INFO]: UUID of player mars is 34ab0af7-4778-3c2d-852d-5150db8629f7
+[02:12:36] [Server thread/INFO]: mars[/127.0.0.1:54574] logged in with entity id 2347 at ([world]-112.5, 68.0, 245.5)
+[02:12:45] [Thread-10/INFO]: [RaspberryJuice] Starting output thread!
+[02:12:45] [Thread-9/INFO]: [RaspberryJuice] Starting input thread
+[02:12:45] [Thread-8/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:54577.
+[02:12:53] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:54577.
+[02:13:54] [Thread-8/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65158.
+[02:13:54] [Thread-11/INFO]: [RaspberryJuice] Starting input thread
+[02:13:54] [Thread-12/INFO]: [RaspberryJuice] Starting output thread!
+[02:14:02] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65158.
+[02:14:18] [Thread-8/INFO]: [RaspberryJuice] Opened connection to/127.0.0.1:65162.
+[02:14:18] [Thread-13/INFO]: [RaspberryJuice] Starting input thread
+[02:14:18] [Thread-14/INFO]: [RaspberryJuice] Starting output thread!
+[02:14:19] [Server thread/INFO]: [RaspberryJuice] Closed connection to/127.0.0.1:65162.
+[02:16:47] [Server thread/INFO]: mars lost connection: Disconnected
+[02:16:47] [Server thread/INFO]: mars left the game
