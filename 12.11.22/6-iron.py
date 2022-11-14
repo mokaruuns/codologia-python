@@ -17,6 +17,5 @@ for i in range(30, -1, -1):
     if mc.getBlock(pos.x, pos.y - 1, pos.z) == 15:
         mc.postToChat("You won!")
         break
-else:
-    # если break не сработал, печатаем "ты проиграл"
-    mc.postToChat("You lose!")
+# если break не сработал, печатаем "ты проиграл"
+mc.postToChat("You lose!")
