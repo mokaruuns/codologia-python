@@ -33,6 +33,9 @@
         - Определение функции
         - Параметры функции
         - Возвращаемое значение функции
+    - [7. модуль turtle](pygame/7_turtle/README.md)
+        - Основные команды
+        - Примеры
 
 
 ## Связь со мной
@@ -43,3 +46,6 @@
 Желательно, чтобы у ребенка был установлен Telegram - там я отвечаю быстрее
 
 Так же есть чат с ребятами в Telegram, которые проходят курс - если ребенка там нет, напишите мне личные сообщения, я добавлю его в чат
+
+# Merge commits
+Need to merge commits in master branch, because I have a lot of commits in my repo, and I want to have a clean history in this repo.
