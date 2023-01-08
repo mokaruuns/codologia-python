@@ -36,6 +36,9 @@
     - [7. модуль turtle](pygame/7_turtle/README.md)
         - Основные команды
         - Примеры
+    - [8. Turtle. Практика](pygame/8_turtle_practice/README.md)
+        - Функция
+        - Практика
 
 
 ## Связь со мной
