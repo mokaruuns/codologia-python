@@ -33,12 +33,20 @@
         - Определение функции
         - Параметры функции
         - Возвращаемое значение функции
-    - [7. модуль turtle](pygame/7_turtle/README.md)
+    - [7. Модуль turtle](pygame/7_turtle/README.md)
         - Основные команды
         - Примеры
-    - [8. Turtle. Практика](pygame/8_turtle_practice/README.md)
+    - [8.1 Turtle. Практика](pygame/8_1_turtle_practice/README.md)
         - Функция
         - Практика
+    - [8.2 Turtle. Практика. Классы и объекты](pygame/8_2_turtle_classes/README.md)
+        - Классы и объекты
+        - Практика
+    - [9. Pygame. Начало](pygame/9_pygame_start/README.md)
+        - Импорт библиотеки
+        - Инициализация
+        - Основной цикл
+        - Закрытие окна
 
 
 ## Связь со мной
