@@ -6,43 +6,43 @@
     - [Открытый урок](minecraft/open_lesson/README.md)
     - [Повтор](minecraft/1_repetition/README.md)
     - [Пример проекта](minecraft/2_project/README.md)
-- [PyGame](pygame)
-    - [1. Введение в Python](pygame/1_introduction/README.md)
+- [PyGame](python)
+    - [1. Введение в Python](python/1_introduction/README.md)
         - Переменные
         - Ввод и вывод
         - Типы данных
-    - [2. Операторы Python](pygame/2_operators/README.md)
+    - [2. Операторы Python](python/2_operators/README.md)
         - Арифметические операторы
         - Операторы сравнения
         - Логические операторы
-    - [3. Условный оператор](pygame/3_if/README.md)
+    - [3. Условный оператор](python/3_if/README.md)
         - Условный оператор if
         - Условный оператор if-else (простое ветвление)
         - Условный оператор if-elif-else (множественное ветвление)
         - Вложенные условные операторы
-    - [4. Цикл](pygame/4_loops/README.md)
+    - [4. Цикл](python/4_loops/README.md)
         - Цикл while
         - Цикл for
         - Создание консольной игры
-    - [5. Списки и их методы](pygame/5_lists/README.md)
+    - [5. Списки и их методы](python/5_lists/README.md)
         - Создание списка
         - Индексация
         - Срезы
         - Методы списков
-    - [6. Функции](pygame/6_functions/README.md)
+    - [6. Функции](python/6_functions/README.md)
         - Определение функции
         - Параметры функции
         - Возвращаемое значение функции
-    - [7. Модуль turtle](pygame/7_turtle/README.md)
+    - [7. Модуль turtle](python/7_turtle/README.md)
         - Основные команды
         - Примеры
-    - [8.1 Turtle. Практика](pygame/8_1_turtle_practice/README.md)
+    - [8.1 Turtle. Практика](python/8_1_turtle_practice/README.md)
         - Функция
         - Практика
-    - [8.2 Turtle. Практика. Классы и объекты](pygame/8_2_turtle_classes/README.md)
+    - [8.2 Turtle. Практика. Классы и объекты](python/8_2_turtle_classes/README.md)
         - Классы и объекты
         - Практика
-    - [9. Pygame. Начало](pygame/9_pygame_start/README.md)
+    - [9. Pygame. Начало](python/9_pygame_start/README.md)
         - Импорт библиотеки
         - Инициализация
         - Основной цикл
@@ -62,6 +62,3 @@
 Желательно, чтобы у ребенка был установлен Telegram - там я отвечаю быстрее
 
 Так же есть чат с ребятами в Telegram, которые проходят курс - если ребенка там нет, напишите мне личные сообщения, я добавлю его в чат
-
-# Merge commits
-Need to merge commits in master branch, because I have a lot of commits in my repo, and I want to have a clean history in this repo.
