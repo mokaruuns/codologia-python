@@ -1,6 +1,6 @@
 import pygame
 from head import Head
-
+from food import Food
 
 class Snake:
     def __init__(self, speed, start, radius):
@@ -28,3 +28,11 @@ class Snake:
 
     def draw(self, screen):
         self.head.draw(screen)
+
+    def eat(self, food):
+        for product in food:
+            if self.head.rect.colliderect(product.rect):
+                print("Ам!")
+                food.remove(product)
+                del product
+                food.append(Food())

@@ -21,9 +21,9 @@ BLACK = (0, 0, 0)
 
 snake = Snake(10, (400, 250), 20)
 
-apple = Food()
-
 clock = pygame.time.Clock()
+
+food = [Food(), Food()]
 
 while True:
     clock.tick(60)
@@ -41,7 +41,9 @@ while True:
             if event.key == pygame.K_d:
                 snake.turn_right()
     screen.fill(BLACK)
-    apple.draw(screen)
+    for product in food:
+        product.draw(screen)
+    snake.eat(food)
     snake.move()
     snake.draw(screen)
     pygame.display.update()
