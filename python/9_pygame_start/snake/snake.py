@@ -1,4 +1,5 @@
 import pygame
+from head import Head
 
 
 class Snake:
@@ -6,7 +7,7 @@ class Snake:
         self.direction = (0, 0)
         self.speed = speed
         self.tail = []
-        self.head = start
+        self.head = Head(start)
         self.color = (255, 0, 0)
         self.radius = radius
 
@@ -23,9 +24,7 @@ class Snake:
         self.direction = (0, 1)
 
     def move(self):
-        self.head = (self.head[0] + self.direction[0] * self.speed,
-                     self.head[1] + self.direction[1] * self.speed)
-        self.head = (self.head[0] % 800, self.head[1] % 600)
+        self.head.move(self.direction, self.speed)
 
     def draw(self, screen):
-        pygame.draw.circle(screen, self.color, self.head, self.radius)
+        self.head.draw(screen)
