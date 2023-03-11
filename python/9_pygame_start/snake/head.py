@@ -8,7 +8,7 @@ class Head(pygame.sprite.Sprite):
         self.position = position
         self.radius = 40
 
-        self.image = pygame.image.load('head.png').convert_alpha()
+        self.image = pygame.image.load('head_down.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (self.radius, self.radius))
         self.rect = self.image.get_rect(center=self.position)
 
@@ -18,4 +18,6 @@ class Head(pygame.sprite.Sprite):
     def move(self, direction, speed):
         self.rect.x = (self.rect.x + direction[0] * speed) % 800
         self.rect.y = (self.rect.y + direction[1] * speed) % 600
+
+
 

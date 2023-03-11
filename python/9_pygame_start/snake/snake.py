@@ -16,6 +16,7 @@ class Snake:
 
     def turn_right(self):
         self.direction = (1, 0)
+        # self.head.image = pygame.transform.rotate(self.head.image, )
 
     def turn_up(self):
         self.direction = (0, -1)
@@ -25,6 +26,7 @@ class Snake:
 
     def move(self):
         self.head.move(self.direction, self.speed)
+        print(self.head)
 
     def draw(self, screen):
         self.head.draw(screen)
