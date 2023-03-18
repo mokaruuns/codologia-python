@@ -1,13 +1,12 @@
 import pygame
-import random
 
 
-class Head(pygame.sprite.Sprite):
+class Body(pygame.sprite.Sprite):
     def __init__(self, position):
         pygame.sprite.Sprite.__init__(self)
         self.position = position
         self.radius = 40
-        self.set_image('images/head_down.png')
+        self.set_image("images/body.png")
 
     def set_image(self, file):
         self.image = pygame.image.load(file).convert_alpha()
@@ -25,17 +24,3 @@ class Head(pygame.sprite.Sprite):
         self.rect.y = (self.rect.y + direction[1] * speed) % 600
         self.position = (self.rect.x, self.rect.y)
 
-    def right(self):
-        self.set_image("images/head_right.png")
-
-    def up(self):
-        self.set_image("images/head_up.png")
-
-    def down(self):
-        self.set_image("images/head_down.png")
-
-    def left(self):
-        self.set_image("images/head_left.png")
-
-    def set_position(self, position):
-        self.position = position

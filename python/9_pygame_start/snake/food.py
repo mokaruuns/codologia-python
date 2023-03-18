@@ -8,7 +8,7 @@ class Food(pygame.sprite.Sprite):
         self.position = (random.randint(0, 800), random.randint(0, 600))
         self.radius = 40
 
-        self.image = pygame.image.load('apple.png').convert_alpha()
+        self.image = pygame.image.load('images/apple.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (self.radius, self.radius))
         self.rect = self.image.get_rect(center=self.position)
 
