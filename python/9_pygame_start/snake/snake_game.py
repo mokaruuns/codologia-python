@@ -20,6 +20,13 @@ YELLOW = (247, 242, 26)
 BLACK = (0, 0, 0)
 
 snake = Snake(10, (400, 250), 20)
+# для теста
+snake.add()
+snake.add()
+snake.add()
+snake.add()
+snake.add()
+
 
 clock = pygame.time.Clock()
 

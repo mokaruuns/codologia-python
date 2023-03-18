@@ -1,6 +1,9 @@
 import pygame
+import queue
 from head import Head
 from food import Food
+from body import Body
+
 
 class Snake:
     def __init__(self, speed, start, radius):
@@ -28,11 +31,17 @@ class Snake:
         self.head.down()
 
     def move(self):
+        self.tail.pop(0)
+        self.tail.append(Body(self.head.position))
+
         self.head.move(self.direction, self.speed)
+
         print(self.head)
 
     def draw(self, screen):
         self.head.draw(screen)
+        for b in self.tail:
+            b.draw(screen)
 
     def eat(self, food):
         for product in food:
@@ -41,3 +50,6 @@ class Snake:
                 food.remove(product)
                 del product
                 food.append(Food())
+
+    def add(self):
+        self.tail.append(Body(self.head.position))
