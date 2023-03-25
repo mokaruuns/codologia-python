@@ -31,8 +31,8 @@ class Snake:
         self.head.down()
 
     def move(self):
-        self.tail.pop(0)
         self.tail.append(Body(self.head.position))
+        self.tail.pop(0)
 
         self.head.move(self.direction, self.speed)
 
@@ -43,6 +43,7 @@ class Snake:
         self.head.draw(screen)
 
     def eat(self, food):
+        score = 0
         for product in food:
             if self.head.rect.colliderect(product.rect):
                 print("Ам!")
@@ -50,6 +51,8 @@ class Snake:
                 del product
                 food.append(Food())
                 self.add()
+                score += 1
+        return score
 
     def add(self):
         self.tail.append(Body(self.head.position))
