@@ -36,12 +36,11 @@ class Snake:
 
         self.head.move(self.direction, self.speed)
 
-        print(self.head)
-
     def draw(self, screen):
-        self.head.draw(screen)
+
         for b in self.tail:
             b.draw(screen)
+        self.head.draw(screen)
 
     def eat(self, food):
         for product in food:
@@ -50,6 +49,7 @@ class Snake:
                 food.remove(product)
                 del product
                 food.append(Food())
+                self.add()
 
     def add(self):
         self.tail.append(Body(self.head.position))

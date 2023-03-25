@@ -19,7 +19,7 @@ BLUE = (0, 0, 255)
 YELLOW = (247, 242, 26)
 BLACK = (0, 0, 0)
 
-snake = Snake(10, (400, 250), 20)
+snake = Snake(10, (400, 250), 30)
 # для теста
 snake.add()
 snake.add()
