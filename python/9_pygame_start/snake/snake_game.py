@@ -16,7 +16,9 @@ class Game:
         self.screen = pygame.display.set_mode((800, 600))
         self.snake = Snake(10, (400, 250), 30)
         self.clock = pygame.time.Clock()
-        self.food = [Food(), Food()]
+        self.food = [Food(True), Food(False)]
+        self.bg = pygame.image.load("images/background.jpg").convert()
+        self.bg = pygame.transform.scale(self.bg, (800, 600))
 
     def key_control(self):
         for event in pygame.event.get():
@@ -33,14 +35,23 @@ class Game:
                     self.snake.turn_right()
 
     def draw(self):
-        self.screen.fill(BLACK)
+        # self.screen.fill(BLACK)
+        self.screen.blit(self.bg, (0, 0))
         for product in self.food:
             product.draw(self.screen)
         self.snake.draw(self.screen)
+        self.draw_score()
+
+    def draw_score(self):
+        font = pygame.font.Font(None, 36)
+        text_surface = font.render(str(self.score), True, BLACK)
+        self.screen.blit(text_surface, (0, 0))
 
     def eat(self):
-        self.score += self.snake.eat(self.food)
-        print("Текущий счет:", self.score)
+        count_food = self.snake.eat(self.food)
+        if count_food != 0:
+            self.score += count_food
+            print("Текущий счет:", self.score)
 
     def play(self):
         while True:

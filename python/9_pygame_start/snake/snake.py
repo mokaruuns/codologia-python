@@ -46,12 +46,15 @@ class Snake:
         score = 0
         for product in food:
             if self.head.rect.colliderect(product.rect):
-                print("Ам!")
+                if product.is_health:
+                    score += 1
+                else:
+                    score -= 5
                 food.remove(product)
                 del product
-                food.append(Food())
+                food.append(Food(True))
                 self.add()
-                score += 1
+
         return score
 
     def add(self):
