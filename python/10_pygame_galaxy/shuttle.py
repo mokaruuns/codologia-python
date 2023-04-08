@@ -1,3 +1,4 @@
+from shuttle_view import ShuttleView
 class Shuttle:
     def __init__(self, hp, speed):
         self.hp = hp
@@ -5,17 +6,10 @@ class Shuttle:
         self.armor = 0
         self.patrons = 100
         self.gun = None
-        self.shuttle_view = None
+        self.shuttle_view = ShuttleView()
 
-    def left(self):
-        self.shuttle_view.left()
+    def draw(self, screen):
+        self.shuttle_view.draw(screen)
 
-    def right(self):
-        self.shuttle_view.right()
 
-    def up(self):
-        self.shuttle_view.up()
-
-    def down(self):
-        self.shuttle_view.down()
 
