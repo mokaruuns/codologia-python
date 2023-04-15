@@ -13,7 +13,7 @@ class Game:
 
         self.score = 0
         self.screen = pygame.display.set_mode((800, 600))
-        self.shuttle = Shuttle(100, 100)
+        self.shuttle = Shuttle(100, 10)
         self.clock = pygame.time.Clock()
 
     def draw(self):
@@ -31,16 +31,17 @@ class Game:
     def key_control(self):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                pygame.quit()
                 quit()
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_w:
-                    self.shuttle.up()
-                if event.key == pygame.K_a:
-                    self.shuttle.left()
-                if event.key == pygame.K_s:
-                    self.shuttle.down()
-                if event.key == pygame.K_d:
-                    self.shuttle.right()
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_LEFT]:
+            self.shuttle.left()
+        if keys[pygame.K_RIGHT]:
+            self.shuttle.right()
+        if keys[pygame.K_UP]:
+            self.shuttle.up()
+        if keys[pygame.K_DOWN]:
+            self.shuttle.down()
 
 
 game = Game()

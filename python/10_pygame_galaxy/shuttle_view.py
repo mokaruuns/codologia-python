@@ -14,3 +14,19 @@ class ShuttleView(pygame.sprite.Sprite):
 
     def draw(self, screen):
         screen.blit(self.image, self.rect)
+
+    def move(self, direction, speed):
+        self.rect.x = (self.rect.x + direction[0] * speed) % 800
+        self.rect.y = (self.rect.y + direction[1] * speed) % 600
+
+    def up(self, speed):
+        self.move((0, -1), speed)
+
+    def down(self, speed):
+        self.move((0, 1), speed)
+
+    def left(self, speed):
+        self.move((-1, 0), speed)
+
+    def right(self, speed):
+        self.move((1, 0), speed)

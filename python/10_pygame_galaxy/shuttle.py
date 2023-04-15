@@ -14,13 +14,13 @@ class Shuttle:
         self.shuttle_view.draw(screen)
 
     def up(self):
-        pass
+        self.shuttle_view.up(self.speed)
 
     def down(self):
-        pass
+        self.shuttle_view.down(self.speed)
 
     def left(self):
-        pass
+        self.shuttle_view.left(self.speed)
 
     def right(self):
-        pass
+        self.shuttle_view.right(self.speed)
