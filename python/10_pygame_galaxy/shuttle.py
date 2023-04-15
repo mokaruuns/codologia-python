@@ -1,5 +1,5 @@
 from shuttle_view import ShuttleView
-
+from bullet import Bullet
 
 class Shuttle:
     def __init__(self, hp, speed):
@@ -7,7 +7,7 @@ class Shuttle:
         self.speed = speed
         self.armor = 0
         self.patrons = 100
-        self.gun = None
+        self.bullets = [Bullet()]
         self.shuttle_view = ShuttleView()
 
     def draw(self, screen):
