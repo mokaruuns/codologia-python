@@ -1,4 +1,6 @@
 from shuttle_view import ShuttleView
+
+
 class Shuttle:
     def __init__(self, hp, speed):
         self.hp = hp
@@ -11,5 +13,14 @@ class Shuttle:
     def draw(self, screen):
         self.shuttle_view.draw(screen)
 
+    def up(self):
+        pass
 
+    def down(self):
+        pass
 
+    def left(self):
+        pass
+
+    def right(self):
+        pass

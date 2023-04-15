@@ -7,7 +7,6 @@ class ShuttleView(pygame.sprite.Sprite):
         self.radius = 40
         self.set_image('images/shuttles/shuttle_easy.png')
 
-
     def set_image(self, file):
         self.image = pygame.image.load(file).convert_alpha()
         self.image = pygame.transform.scale(self.image, (self.radius, self.radius))

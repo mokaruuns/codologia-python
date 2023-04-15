@@ -23,10 +23,24 @@ class Game:
     def play(self):
         while True:
             self.clock.tick(60)
-            # self.key_control()
+            self.key_control()
             # self.shuttle.move()
             self.draw()
             pygame.display.update()
+
+    def key_control(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                quit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_w:
+                    self.shuttle.up()
+                if event.key == pygame.K_a:
+                    self.shuttle.left()
+                if event.key == pygame.K_s:
+                    self.shuttle.down()
+                if event.key == pygame.K_d:
+                    self.shuttle.right()
 
 
 game = Game()
