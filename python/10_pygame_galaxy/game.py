@@ -24,9 +24,11 @@ class Game:
         while True:
             self.clock.tick(60)
             self.key_control()
-            # self.shuttle.move()
+            self.shuttle.move_bullets()
             self.draw()
             pygame.display.update()
+
+
 
     def key_control(self):
         for event in pygame.event.get():

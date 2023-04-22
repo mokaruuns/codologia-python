@@ -28,4 +28,14 @@ class Shuttle:
         self.shuttle_view.right(self.speed)
 
     def fire(self):
-        self.bullets.append(Bullet(x=self.shuttle_view.rect.x, y=self.shuttle_view.rect.y))
+        self.bullets.append(Bullet(
+            x=self.shuttle_view.rect.x + self.shuttle_view.radius // 2,
+            y=self.shuttle_view.rect.y
+        ))
+
+    def move_bullets(self):
+        for bullet in self.bullets:
+            bullet.bullet_view.up(bullet.speed)
+            if bullet.bullet_view.rect.y < 5:
+                self.bullets.remove(bullet)
+
