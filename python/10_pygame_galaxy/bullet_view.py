@@ -2,15 +2,16 @@ import pygame
 
 
 class BulletView(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
+        self.position = (x, y)
         self.radius = 5
         self.set_image('images/bullets/bullet.png')
 
     def set_image(self, file):
         self.image = pygame.image.load(file).convert_alpha()
         self.image = pygame.transform.scale(self.image, (self.radius, self.radius))
-        self.rect = self.image.get_rect()
+        self.rect = self.image.get_rect(center=self.position)
 
     def draw(self, screen):
         screen.blit(self.image, self.rect)

@@ -42,6 +42,8 @@ class Game:
             self.shuttle.up()
         if keys[pygame.K_DOWN]:
             self.shuttle.down()
+        if keys[pygame.K_SPACE]:
+            self.shuttle.fire()
 
 
 game = Game()
