@@ -16,7 +16,7 @@ class Game:
         self.screen = pygame.display.set_mode((800, 600))
         self.shuttle = Shuttle(100, 10)
         self.clock = pygame.time.Clock()
-        self.enemies = [Enemy(100, 5)]
+        self.enemies = [Enemy(100, 2)]
 
     def draw(self):
         self.screen.fill(BLACK)
@@ -29,10 +29,10 @@ class Game:
             self.clock.tick(60)
             self.key_control()
             self.shuttle.move_bullets()
+            for enemy in self.enemies:
+                enemy.auto_moving()
             self.draw()
             pygame.display.update()
-
-
 
     def key_control(self):
         for event in pygame.event.get():
