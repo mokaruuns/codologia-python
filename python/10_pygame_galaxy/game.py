@@ -31,6 +31,9 @@ class Game:
             self.shuttle.move_bullets()
             for enemy in self.enemies:
                 enemy.auto_moving()
+                enemy.get_damage(self.shuttle.bullets)
+                if enemy.hp <= 0:
+                    self.enemies.remove(enemy)
             self.draw()
             pygame.display.update()
 
