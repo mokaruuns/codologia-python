@@ -1,5 +1,6 @@
 import pygame
 from shuttle import Shuttle
+from enemy import Enemy
 
 BLUE = (0, 0, 255)
 YELLOW = (247, 242, 26)
@@ -15,10 +16,13 @@ class Game:
         self.screen = pygame.display.set_mode((800, 600))
         self.shuttle = Shuttle(100, 10)
         self.clock = pygame.time.Clock()
+        self.enemies = [Enemy(100, 5)]
 
     def draw(self):
         self.screen.fill(BLACK)
         self.shuttle.draw(self.screen)
+        for enemy in self.enemies:
+            enemy.draw(self.screen)
 
     def play(self):
         while True:

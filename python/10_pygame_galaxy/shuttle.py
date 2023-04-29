@@ -6,7 +6,6 @@ class Shuttle:
         self.hp = hp
         self.speed = speed
         self.armor = 0
-        self.patrons = 100
         self.bullets = []
         self.shuttle_view = ShuttleView()
 
