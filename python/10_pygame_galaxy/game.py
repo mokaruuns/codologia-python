@@ -1,6 +1,7 @@
 import pygame
 from shuttle import Shuttle
 from enemy import Enemy
+from random import randint
 
 BLUE = (0, 0, 255)
 YELLOW = (247, 242, 26)
@@ -16,7 +17,7 @@ class Game:
         self.screen = pygame.display.set_mode((800, 600))
         self.shuttle = Shuttle(100, 10)
         self.clock = pygame.time.Clock()
-        self.enemies = [Enemy(100, 2)]
+        self.enemies = [Enemy(0, 0), Enemy(0, 0)]
 
     def draw(self):
         self.screen.fill(BLACK)
@@ -30,6 +31,7 @@ class Game:
             self.key_control()
             self.shuttle.move_bullets()
             for enemy in self.enemies:
+                enemy.move_bullets()
                 enemy.auto_moving()
                 enemy.get_damage(self.shuttle.bullets)
                 if enemy.hp <= 0:
@@ -53,6 +55,9 @@ class Game:
             self.shuttle.down()
         if keys[pygame.K_SPACE]:
             self.shuttle.fire()
+        if keys[pygame.K_o]:
+            for enemy in self.enemies:
+                enemy.fire()
 
 
 game = Game()
