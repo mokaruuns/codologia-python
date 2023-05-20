@@ -15,7 +15,7 @@ class Game:
 
         self.score = 0
         self.screen = pygame.display.set_mode((800, 600))
-        self.shuttle = Shuttle(100, 10)
+        self.shuttle = Shuttle(10, 10)
         self.clock = pygame.time.Clock()
         self.enemies = [Enemy(0, 0), Enemy(0, 0)]
 
@@ -34,8 +34,10 @@ class Game:
                 enemy.move_bullets()
                 enemy.auto_moving()
                 enemy.get_damage(self.shuttle.bullets)
+                self.shuttle.get_damage(enemy.bullets)
                 if enemy.hp <= 0:
                     self.enemies.remove(enemy)
+                    self.enemies.append(Enemy(enemy.hp * 1.5, enemy.speed * 1.5))
             self.draw()
             pygame.display.update()
 
@@ -55,8 +57,9 @@ class Game:
             self.shuttle.down()
         if keys[pygame.K_SPACE]:
             self.shuttle.fire()
-        if keys[pygame.K_o]:
-            for enemy in self.enemies:
+
+        for enemy in self.enemies:
+            if abs(enemy.shuttle_view.rect.x - self.shuttle.shuttle_view.rect.x) < 10:
                 enemy.fire()
 
 

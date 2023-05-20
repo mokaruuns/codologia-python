@@ -2,11 +2,14 @@ import pygame
 
 
 class BulletView(pygame.sprite.Sprite):
-    def __init__(self, x, y):
+    def __init__(self, x, y, enemy):
         pygame.sprite.Sprite.__init__(self)
         self.position = (x, y)
         self.radius = 5
-        self.set_image('images/bullets/bullet.png')
+        if enemy:
+            self.set_image('images/bullets/bullet.png')
+        else:
+            self.set_image('images/bullets/bullet.png')
 
     def set_image(self, file):
         self.image = pygame.image.load(file).convert_alpha()

@@ -1,5 +1,10 @@
+import time
+
+import pygame
+
 from shuttle_view import ShuttleView
 from bullet import Bullet
+
 
 class Shuttle:
     def __init__(self, hp, speed):
@@ -38,3 +43,15 @@ class Shuttle:
             if bullet.bullet_view.rect.y < 5:
                 self.bullets.remove(bullet)
 
+    def get_damage(self, bullets):
+        for bullet in bullets:
+            if bullet.bullet_view.rect.colliderect(self.shuttle_view.rect):
+                self.hp -= bullet.damage
+                bullets.remove(bullet)
+            self.kill()
+
+    def kill(self):
+        if self.hp < 1:
+            time.sleep(1)
+            pygame.quit()
+            quit()
